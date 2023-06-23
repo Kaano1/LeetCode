@@ -9,4 +9,4 @@ public:
         cal /= (salary.size() - 2);
         return (cal);
     }
-};
+}
