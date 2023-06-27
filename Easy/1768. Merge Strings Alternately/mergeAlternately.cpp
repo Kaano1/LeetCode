@@ -4,11 +4,11 @@ public:
         string result;
         int     i = 0;
         int     j = 0;
-        int     max = word2.length();
+        int     max = word2.length() + 1;
 
-        if (word1.length() > word2.length())
-            max = word1.length();
-        while (max--)
+        if (word1.length() > max)
+            max = word1.length() + 1;
+        while (--max > -1)
         {
             if (word1[i] != NULL)
                 result += word1[i++];
